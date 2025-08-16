@@ -1,0 +1,48 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.portada {
+    background-image: url('sangre1.jpg');
+    background-size: 100% auto;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 100%;
+}
+
+.contenido-central {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 40px 10px;
+    gap: 40px;
+    text-align: left;
+}
+
+.contenido-central .texto {
+    flex: 1;
+    max-width: 600px;
+}
+
+.img-derecha {
+    flex: 1;
+    max-width: 300px; /* Ajusta el tamaño según tu preferencia */
+    height: auto;
+    align-self: flex-start;
+}
+
+footer {
+    background-image: url('sangre1.jpg');
+    background-size: 100% auto;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 100%;
+}

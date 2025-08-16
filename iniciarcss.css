@@ -1,0 +1,176 @@
+.menu-boton {
+    background-color: #28a7f0;
+    color: #000000;
+    padding: 10px 20px;
+    font-size: 25px;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.imagenes-lados {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    gap: 300px;
+}
+
+.bloque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-izq {
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 20px;
+}
+.img-der {
+    max-width: 540px;
+    height: auto;
+    margin-bottom: 20px;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.portada {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 60vh;
+    padding-top: 50px;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding-top: 10px;
+}
+.re {
+    height: 130px;
+    max-width: 140px;
+    margin-left: 70px;
+    padding-top: 5px;
+}
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, #bb0505, #ff6b6b);
+    margin: 2px 0;
+}   
+.h {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto 10px auto; 
+    display: block;
+    color: #ff0000;
+    font-size: 70px;
+    padding-top: 0; 
+}
+
+.portada1 {
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.3)),
+    url('sangre1.jpg');
+    background-size: cover;
+    background-position: center 90%;
+    background-repeat: no-repeat;
+    min-height: 755px;
+    display: flex;
+    align-items: center;
+    padding: 22px 30px;
+    position: relative;
+}
+header {
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 400px auto;
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+    position: relative;
+}
+.conjunto {
+    background-image: url(blancoformu.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    max-width: 400px;
+    margin: 40px auto;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    display: flex;
+    align-items: center;
+    padding: 40px 40px;
+    position: relative;
+    gap: 16px;
+    flex-direction: column;
+    
+}
+.rc {
+    width: 30%;
+    height: 30%;
+}
+.conjunto h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-align: center;
+    color: #bb0505;
+}
+.conjunto h2 span {
+    display: block;
+    color: #28a7f0;
+    margin-top: 4px;       /* Espacio entre las líneas */
+}
+form {
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+label.for {
+    display: block;
+    margin-bottom: 6px; /* Espacio debajo del label */
+    font-size: 18px;    /* Opcional: tamaño de letra */
+}
+
+input[type="email"], input[type="password"] {
+    margin-bottom: 16px; /* Espacio debajo del input */
+    padding: 8px;
+    font-size: 16px;
+    width: 100%;         /* Opcional: input más ancho */
+    box-sizing: border-box;
+}
+button[type="submit"] {
+    background-color: #bb0505;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    margin-top: 10px;
+    align-self: center;
+}
+
+button[type="submit"]:hover {
+    background-color: #a00d0d;
+    transform: translateY(-2px);
+}

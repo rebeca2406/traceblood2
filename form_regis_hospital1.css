@@ -1,0 +1,136 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1;
+    color: #333;
+}
+body {
+    height: 30%;
+    margin: 0;
+    padding: 0;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding-top: 10px;
+    color: #fff;
+    background-size: 25% 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 90px;
+    max-height: 90px;
+    padding: 20px 15px;
+    position: relative;
+    align-items: center;
+}
+
+.re {
+    height: 130px;
+    max-width: 140px;
+    margin-left: 70px;
+    padding-top: 5px;
+} 
+.h {
+    text-align: center;
+    width: 100%;
+    margin: 10px 10px; 
+    display: block;
+    color: #ff0000;
+    font-size: 50px;
+    padding-top: 0; 
+}
+
+
+.imafond {
+    background-image: url('fondoformulario.jpeg');
+    background-size: 100% 100%;
+    background-position: 90%;
+    background-repeat: no-repeat;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    padding: 107.5px 30px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.conj {
+    background-image: url(blancoformu.avif);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 130px;
+    max-width: 500px;
+    margin: 0;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    display: flex;
+    align-items: center;
+    padding: 30px 200px;
+    position: relative;
+    gap: 5px;
+    flex-direction: column;
+    
+}
+.conj h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-align: center;
+    color: #bb0505;
+}
+
+.conj h2 span {
+    display: block;
+    color: #28a7f0;
+    margin-top: 4px;
+}
+
+form {
+    padding: 10px 20px;
+    font-size: 25px;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input[type="email"], input[type="password"], input[type="text"], input[type="tel"] {
+    margin-bottom: 15px;
+    padding: 2px;
+    font-size: 15px;
+    width: 100%; 
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+label.for {
+    display: block;
+    margin-bottom: 6px; 
+    font-size: 10px;    
+}
+
+.conj form {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: center;
+}
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+#map {
+    width: 300px;
+    height: 300px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+

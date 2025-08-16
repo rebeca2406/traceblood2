@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form_regis_hospital1.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB17gLB3VDsAJQslI5pGDauBW7D7vjJTic"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img class="re" src="gota.jpg" alt="cargando...">
+        <h5 class="h">Traceblood</h5>
+    </header>
+
+    <div class="imafond">
+    <div class="conj">
+        <h2>Formulario</h2>
+        <form action="ini1.html" method="POST">
+            <div class="form-group">
+                <label for="nombre">Nombre del hospital:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+                        
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <div id="map" style="width: 100%; height: 300px;"></div>
+                <input type="text" id="latitud" name="latitud" placeholder="Latitud" readonly>
+                <input type="text" id="longitud" name="longitud" placeholder="Longitud" readonly>
+            </div>
+            
+        </form>
+    </div>
+    <script>
+    function initMap() {
+        var centro = {lat:4.74639, lng:-75.91167};
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 12,
+            center: centro
+        });
+        var marker = new google.maps.Marker({
+            position: centro,
+            map: map,
+            draggable: true
+        });
+
+        // Actualiza los campos cuando el marcador se mueve
+        marker.addListener('dragend', function(event) {
+            document.getElementById('latitud').value = event.latLng.lat();
+            document.getElementById('longitud').value = event.latLng.lng();
+        });
+
+        // Inicializa los campos con la posición inicial
+        document.getElementById('latitud').value = centro.lat;
+        document.getElementById('longitud').value = centro.lng;
+        }
+
+    // Ejecuta el mapa al cargar la página
+    window.onload = initMap;
+    </script>
+</body>
+</html> 
